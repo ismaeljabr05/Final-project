@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Astronauts</title>
+    <style>
+        body{
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+      #main {
+        background-image: url(imge/pic19.jpg);
+        background-size: 100%;
+        width: 100%;
+        margin: auto;
+        height: 750px;
+        background-repeat: no-repeat;
+      }
+      #link {
+        float: right;
+        height: 50px;
+        width: 60%;
+        position: relative;
+        padding-top: 20px;
+        right: 10px;
+        text-align: center;
+      }
+      #divName {
+        position: relative;
+        left: 450px;
+        top: 180px;
+      }
+      #divPassword {
+        position: relative;
+        left: 450px;
+        top: 195px;
+      }
+      #divConfirm {
+        position: relative;
+        left: 450px;
+        top: 220px;
+      }
+      #divBirthDay{
+        position: relative;
+        left: 450px;
+        top: 270px;
+        width: 40%;
+      }
+      #divButton{
+        position: relative;
+         left: 450px; 
+         top: 320px;
+        }
+      #button {
+        border: 3px solid black;
+        background-color: cadetblue;
+        color: black;
+        border-radius: 5px;
+        height: 40px;
+      }
+      a {
+        text-decoration: none;
+        text-transform: capitalize;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      label {
+        color: white;
+        font-weight: bolder;
+      }
+      input {
+        width: 23%;
+      }
+      h1,
+      h3 {
+        color: white;
+      }
+      span{color: rgb(93, 242, 247);}
+    </style>
+  </head>
+  <body>
+    <form>
+      <div id="main">
+        <!-- v-link-->
+        <div id="link">
+          <a href="Home.html">Home &nbsp; &nbsp;|</a>
+          <a href="about us.html">About us &nbsp; &nbsp; |</a>
+          <a href="join us.html">join us &nbsp; &nbsp; |</a>
+          <a href="Explore.html">explore &nbsp; &nbsp; |</a>
+          <a href="contact us.html">contact us &nbsp; &nbsp; |</a>
+          <a href="FAQ.html" style="text-transform: uppercase">faq &nbsp; &nbsp; |</a>
+          <a href="blog.html">blog &nbsp; &nbsp; |</a>
+          <a href="our success.html">our success &nbsp; &nbsp; </a>
+          <a href="login.html" style="background-color: lightskyblue; color: black" >&nbsp; login &nbsp; &nbsp;</a>
+        </div>
+        <!-- Form Name -->
+        <div id="divName">
+          <h1>Sign Up</h1>
+          <label><span>Enter </span> User Name or E-mail</label>
+          <br />
+          <br />
+          <input type="text" required />
+        </div>
+        <!-- Form Password -->
+        <div id="divPassword">
+          <label>Create Password</label>
+          <br />
+          <br />
+          <input type="password" required />
+        </div>
+        <!-- Form Confirm Password -->
+        <div id="divConfirm">
+            <label>Confirm Password</label>
+            <br />
+            <br />
+            <input type="password" required />
+          </div>
+        <!-- Form Confirm birthDay -->
+        <div id="divBirthDay">
+            <input type="date" required />
+          </div>
+          <!-- Form Sign Up -->
+        <div id="divButton">
+            <a href="Home.html">
+                <input id="button" type="button" value="Sign Up" required />
+            </a>
+          </div>
+
+
+      </div>
+    </form>
+  </body>
+</html>

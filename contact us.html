@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Astronauts</title>
+    <style>
+      #main {
+        background-image: url(imge/bgContact.jpg);
+        background-size: 100%;
+        width: 100%;
+        margin: auto;
+        height: 750px;
+        background-repeat: no-repeat;
+      }
+      #intro {
+        width: 50%;
+        height: 100px;
+        color: white;
+        text-transform: capitalize;
+        font-size: 25px;
+        position: relative;
+        left: 560px;
+        top: 100px;
+      }
+      #link {
+        float: right;
+        height: 50px;
+        width: 60%;
+        position: relative;
+        bottom: 50px;
+        padding-top: 20px;
+        right: 10px;
+        text-align: center;
+      }
+      #inputEmail {
+        position: relative;
+        top: 150px;
+        margin: auto;
+      }
+      #inputTextarea {
+        position: relative;
+        top: 200px;
+        margin: auto;
+      }
+      #send {
+        width: 20%;
+        position: relative;
+        left: 430px;
+        top: 225px;
+        border-radius: 10px;
+        margin: auto;
+      }
+      #adress {
+        background-image: url(imge/GPS\ 2.jpg);
+        width: 3%;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        top: 10px;
+        left: 20px;
+      }
+      #adressText {
+        float: left;
+        position: relative;
+        left: 80px;
+        bottom: 50px;
+      }
+
+      #call {
+        background-image: url(imge/call.jpg);
+        width: 3%;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        top: 10px;
+        left: 20px;
+      }
+      #callText {
+        float: left;
+        position: relative;
+        right: 2px;
+        bottom: 50px;
+      }
+
+      #mail {
+        background-image: url(imge/Mail\ Icon.jpg);
+        width: 3%;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        top: 10px;
+        left: 20px;
+      }
+      #mailText {
+        float: left;
+        position: relative;
+        right: 90px;
+        bottom: 50px;
+      }
+
+      #facebook {
+        background-image: url(imge/facebook\ \(2\).jpg);
+        width: 3%;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        float: left;
+        position: relative;
+        bottom: 60px;
+        left: 205px;
+      }
+
+      #instagram {
+        background-image: url(imge/instagram.jpg);
+        width: 3%;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        float: left;
+        position: relative;
+        bottom: 60px;
+        left: 215px;
+      }
+
+      #twitter {
+        background-image: url(imge/twitter.jpg);
+        width: 3%;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        float: left;
+        position: relative;
+        bottom: 60px;
+        left: 225px;
+      }
+
+      #userName {
+        float: left;
+        color: white;
+        position: relative;
+        bottom: 100px;
+        left: 330px;
+      }
+
+      #footerP1 {
+        float: right;
+        background-image: url(imge/pic\ 2.jpg);
+        height: 150px;
+        width: 10%;
+        position: relative;
+        bottom: 140px;
+        right: 100px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+
+      #js {
+        float: right;
+        position: relative;
+        bottom: 60px;
+        left: 85px;
+      }
+
+      #footer {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.658);
+        position: relative;
+        top: 100px;
+        height: 200px;
+      }
+      #paragraph {
+        width: 30%;
+        color: black;
+        border: dotted 1px white;
+        position: relative;
+        left: 10px;
+        font-size: larger;
+        text-indent: 5px;
+        border-left: none;
+        border-right: none;
+      }
+      .inputd {
+        position: relative;
+        left: 900px;
+        top: 100px;
+      }
+      .inputd:hover {
+        transform: rotateY(10deg) rotateX(10deg);
+      }
+
+      input::placeholder {
+        color: blue;
+      }
+      textarea::placeholder {
+        color: blue;
+        text-transform: capitalize;
+      }
+
+      a {
+        text-decoration: none;
+        text-transform: capitalize;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      span {
+        color: #d3d3d3;
+      }
+      h1 {
+        text-indent: 20px;
+        color: #264653;
+      }
+      h2 {
+        text-shadow: 6px 6px 6px lightskyblue;
+      }
+      body {
+        max-width: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+      input {
+        width: 23%;
+      }
+      img {
+        width: 35%;
+        height: 70px;
+      }
+      p {
+        text-shadow: 4px 4px 4px white;
+      }
+      h5 {
+        color: white;
+      }
+      img {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <!-- main div -->
+      <div id="main">
+        <!-- div logo  -->
+        <div>
+          <h1><span>A</span>stronauts</h1>
+        </div>
+        <!-- v-link-->
+        <div id="link">
+          <a href="Home.html">Home &nbsp; &nbsp;|</a>
+          <a href="about us.html">About us &nbsp; &nbsp; |</a>
+          <a href="join us.html">join us &nbsp; &nbsp; |</a>
+          <a href="Explore.html">explore &nbsp; &nbsp; |</a>
+          <a href="contact us.html">contact us &nbsp; &nbsp; |</a>
+          <a href="FAQ.html" style="text-transform: uppercase">faq &nbsp; &nbsp; |</a>
+          <a href="blog.html">blog &nbsp; &nbsp; |</a>
+          <a href="our success.html">our success &nbsp; &nbsp; </a>
+          <a href="login.html" style="background-color: lightskyblue; color: black" >&nbsp; login &nbsp; &nbsp;</a>
+          
+        </div>
+        <!-- intro to contact us  -->
+        <div id="intro"><h2>contact us !</h2></div>
+        <!-- input div-->
+        <div class="inputd">
+          <input type="text" placeholder="Your Name " required />
+        </div>
+        <!-- email -->
+        <div class="inputd" id="inputEmail">
+          <input type="email" placeholder="Your e-mail " required />
+        </div>
+        <!-- comment -->
+        <div class="inputd" id="inputTextarea">
+          <textarea
+            rows="2"
+            cols="45"
+            placeholder="type your message..."
+          ></textarea>
+        </div>
+        <!-- submit -->
+        <div id="send">
+          <input type="submit" value="send" />
+        </div>
+        <!-- paragraph  -->
+        <div id="paragraph">
+          <h1>We're here to help!</h1>
+          <p>
+            If you have any questions or need more information, feel free to
+            reach out to us. We’re happy to hear from you and will assist you as
+            quickly as possible.
+          </p>
+        </div>
+        <!-- footer -->
+        <div id="footer">
+          <!-- adress -->
+          <div id="adress"></div>
+          <!-- adress text -->
+          <div id="adressText"><h5>📍 Mecca Mall</h5></div>
+          <!-- call -->
+          <div id="call"></div>
+          <!-- call text-->
+          <div id="callText"><h5>+962790000000</h5></div>
+          <!-- mail -->
+          <div id="mail"></div>
+          <!-- mail text -->
+          <div id="mailText"><h5>Astronauts@gmail.com</h5></div>
+          <!------------------ social media -------------------->
+          <!-- username -->
+          <div id="userName">@Astronauts_2005</div>
+          <!-- facebook -->
+          <div id="facebook"></div>
+          <!-- imstagram -->
+          <div id="instagram"></div>
+          <!-- twitter -->
+          <div id="twitter"></div>
+          <!-- pics -->
+          <div id="footerP1"></div>
+          <div id="js">
+            <input
+              type="button"
+              onclick="document.getElementById('footerP1').style.backgroundImage= 'url(\'imge/pic 1.jpg\')'"
+              value=">>"
+            />
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

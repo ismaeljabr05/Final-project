@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FAQ</title>
+    <style>
+      #link {
+        float: right;
+        height: 50px;
+        width: 60%;
+        position: relative;
+        bottom: 50px;
+        padding-top: 20px;
+        right: 10px;
+        text-align: center;
+      }
+      #main {
+        background-image: url(imge/artificial\ moon.png);
+        background-size: 100%;
+        width: 100%;
+        margin: auto;
+        height: 750px;
+        background-repeat: no-repeat;
+      }
+
+      h1 {
+        text-indent: 20px;
+        color: lightskyblue;
+      }
+      span {
+        color: rgb(255, 255, 255);
+      }
+      a {
+        text-decoration: none;
+        text-transform: capitalize;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      /* ------------------------------------------------------------------ */
+      #image-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+      }
+      #caption {
+        font-size: 20px;
+        margin-top: 10px;
+        color: white;
+        text-transform: capitalize;
+      }
+      button {
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: lightskyblue;
+        transition: background-color 0.3s; /* تأثير انتقال عند التفاعل */
+        border-radius: 25px;
+        border: none;
+      }
+      button:hover {
+        background-color: #455aa0; /* لون الخلفية عند التمرير */
+      }
+      #title {
+        text-transform: capitalize;
+        color: rgb(49, 6, 240);
+        background-color: rgba(248, 248, 248, 0.589);
+        /* تغيير اللون إلى الأبيض */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <!-- div logo  -->
+      <div>
+        <h1><span>A</span>stronauts</h1>
+      </div>
+      <!-- v-link-->
+      <div id="link">
+        <a href="Home.html">Home &nbsp; &nbsp;|</a>
+        <a href="about us.html">About us &nbsp; &nbsp; |</a>
+        <a href="join us.html">join us &nbsp; &nbsp; |</a>
+        <a href="Explore.html">explore &nbsp; &nbsp; |</a>
+        <a href="contact us.html">contact us &nbsp; &nbsp; |</a>
+        <a href="FAQ.html" style="text-transform: uppercase"
+          >faq &nbsp; &nbsp; |</a
+        >
+        <a href="blog.html">blog &nbsp; &nbsp; |</a>
+        <a href="our success.html">our success &nbsp; &nbsp; </a>
+        <a
+          href="login.html"
+          style="background-color: lightskyblue; color: black"
+          >&nbsp; login &nbsp; &nbsp;</a
+        >
+      </div>
+      <!-- ---------------------------------------------------------------------------- -->
+      <div><button id="change-content">All You Need to Know</button></div>
+      <div id="image-container">
+        <img id="current-image" src="imge/pic 10.jpg" alt="Image" />
+        <h1 id="title"></h1>
+        <p id="caption">Tour Around Space</p>
+      </div>
+      <script>
+        // Array of images and captions
+        const content = [
+          {
+            src: "imge/mars.png",
+            title: "can we Living on Mars?",
+            text: "Living on Mars is technically possible, but it is very challenging and requires advanced technologies to provide oxygen, water, food, and protection from radiation.",
+          },
+          {
+            src: "imge/black whol.jpg",
+            title: " what is the Black Hole?",
+            text: "The black hole is a region with extremely strong gravity, where nothing can escape, not even light. It forms when a massive star collapses and is known by its effect on surrounding objects, such as pulling in matter or bending the path of light.",
+          },
+          {
+            src: "imge/shohob.png",
+            title: " what is Meteors?",
+            text: "Meteors are small pieces of rock or metal that enter Earth's atmosphere at high speed, friction with the air causes them to ignite, creating a bright light in the sky. They are often called (shooting stars) because of this glowing effect.",
+          },
+          {
+            src: "imge/pic 11.jpg",
+            title: "what is Telescope?",
+            text: "A telescope is an instrument used to gather and focus light to view distant celestial objects. It works by using lenses or mirrors to magnify images, helping to study stars, planets, and galaxies.",
+          },
+          {
+            src: "imge/space monitor.png",
+            title: "Astronomical Observation",
+            text: "Astronomical observation is the study of celestial bodies and cosmic phenomena using tools like telescopes. It aims to understand the movement of stars and planets, discover phenomena like eclipses and meteors, and helps in discovering new objects and deepening our understanding of the universe.",
+          },
+        ];
+
+        let currentIndex = 0;
+
+        // Change image, title, and text on button click
+        document
+          .getElementById("change-content")
+          .addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % content.length; // Cycle through the content array
+            const currentImage = document.getElementById("current-image");
+            const caption = document.getElementById("caption");
+            const title = document.getElementById("title");
+
+            currentImage.src = content[currentIndex].src;
+            caption.textContent = content[currentIndex].text;
+            title.textContent = content[currentIndex].title; // Change the title (h1)
+          });
+      </script>
+    </div>
+  </body>
+</html>
